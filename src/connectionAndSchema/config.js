@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+mongoose.set("strictQuery", false);
 let url =process.env.MONGO_URL
 mongoose
   .connect(url, { useUnifiedTopology:true,

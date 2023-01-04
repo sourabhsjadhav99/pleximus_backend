@@ -1,10 +1,10 @@
-let dotenv=require('dotenv').config({path:"../.env"})
+let dotenv=require('dotenv').config()
 const express = require("express");
 const app = express();
 const port =process.env.PORT || 5000
-const formRoutes = require("./routes/crud");
-const loginRoutes= require("./routes/login");
-require("./connectionAndSchema/config");
+const formRoutes = require("./src/routes/crud");
+const loginRoutes= require("./src/routes/login");
+require("./src/connectionAndSchema/config");
 let cors = require("cors")
 
  
