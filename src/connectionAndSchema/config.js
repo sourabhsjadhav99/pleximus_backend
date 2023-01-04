@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-let url ="mongodb+srv://sourabh:sourabh@cluster0.9orvhmn.mongodb.net/productsdb?retryWrites=true&w=majority"
+let url =process.env.MONGO_URL
 mongoose
   .connect(url, { useUnifiedTopology:true,
     useNewUrlParser: true})

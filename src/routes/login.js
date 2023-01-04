@@ -5,7 +5,7 @@ const { body, validationResult } = require('express-validator');
 const User = require("../connectionAndSchema/loginSchema");
 const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
-const secret = "ESTATE";
+const secret = process.env.SECRET;
 const cors=require("cors")
 
 
